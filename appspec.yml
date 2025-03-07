@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/ec2-user/hello-world-flask-app
+
+hooks:
+  ApplicationStart:
+    - location: scripts/start_python_app.sh
+      timeout: 300
+      runas: root

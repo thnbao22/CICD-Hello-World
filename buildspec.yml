@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+  pre_build:
+    commands:
+      - echo Installing python packages...
+      - python -m venv venv
+      - source venv/bin/activate
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - echo run tests
+      - python -m unittest discover -s tests
+  post_build:
+    commands:
+      - echo Run unit test completed on `date`
