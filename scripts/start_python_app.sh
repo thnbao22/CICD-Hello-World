@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/ec2-user/hello-world-python-app
+cd /home/ec2-user/hello-world-flask-app
 
 python3 -m venv venv
 
