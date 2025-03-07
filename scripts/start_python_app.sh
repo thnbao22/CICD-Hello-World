@@ -2,7 +2,7 @@
 
 cd /home/ec2-user/hello-world-python-app
 
-python -m venv venv
+python3 -m venv venv
 
 source venv/bin/activate
 
