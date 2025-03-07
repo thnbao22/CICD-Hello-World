@@ -10,4 +10,4 @@ pip install --upgrade pip
 
 pip install -r requirements.txt
 
-sudo systemctl restart hello-world-python-app.service
+sudo systemctl restart hello-world-flask-app.service
