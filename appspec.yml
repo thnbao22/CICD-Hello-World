@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ec2-user/hello-world-flask-app
+    destination: /var/www/hello-world-flask-app
 
 hooks:
   ApplicationStart:
