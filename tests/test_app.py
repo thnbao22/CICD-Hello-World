@@ -13,7 +13,7 @@ class FlaskTestCase(unittest.TestCase):
         
         self.assertEqual(response.status_code, 200)
         
-        expected = 'Hello World! I am running on host %s\n' % socket.gethostname()
+        expected = 'Hello AWS! This is my Hello World CICD running on host %s\n' % socket.gethostname()
         self.assertEqual(response.data.decode(), expected)
 
 if __name__ == '__main__':
